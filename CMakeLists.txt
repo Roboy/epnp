@@ -46,6 +46,8 @@ install(DIRECTORY include/${PROJECT_NAME}/
         FILES_MATCHING PATTERN "*.h"
 )
 
+install(TARGETS ${PROJECT_NAME} DESTINATION lib)
+
 ament_export_include_directories(include)
 ament_export_libraries( ${PROJECT_NAME})
 ament_package(
