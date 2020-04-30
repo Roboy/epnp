@@ -4,6 +4,7 @@ project(epnp)
 if(NOT CMAKE_CXX_STANDARD)
     set(CMAKE_CXX_STANDARD 14)
 endif()
+SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++14 -g -fpic")
 
 find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
